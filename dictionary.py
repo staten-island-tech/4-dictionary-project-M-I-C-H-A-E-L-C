@@ -1,4 +1,4 @@
-item = {
+item = [{
     "name": "55-inch Ultra HD Smart TV with HDR and built-in streaming apps.",
     "price": 130.99000000000000000000013,
     "department": "Televisions",
@@ -32,4 +32,5 @@ item = {
     "department": "Construction tols",
     "mass": "??? ",
     "description": "Big moneh"
-},
+}] 
+print("Hi, dis me store. Good stuff. Very Chep")
