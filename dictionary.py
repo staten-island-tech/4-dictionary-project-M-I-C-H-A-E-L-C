@@ -1,7 +1,7 @@
 x = []
 y = 0
 item1 = {
-    "name": "55-inch Ultra HD Smart TV with HDR and built-in streaming apps.",
+    "name": "55-inch Ultra HD Smart TV with HDR and built-in streaming apps",
     "price": 130.99000000000000000000013,
     "department": "Televisions",
     "mass": "1 solar mass, maybe like 55 pounds?",
@@ -30,7 +30,7 @@ item4 = {
 },
 item5 = {    
     "name": "Linkedin",
-    "price": "More than empire state building",
+    "price": 13.99,
     "department": "Construction tols",
     "mass": "??? ",
     "description": "Big moneh"
@@ -41,4 +41,23 @@ print(item2[0]["name"])
 print(item3[0]["name"])
 print(item4[0]["name"])
 print(item5["name"])
-print(input("What would you like to purchase?:"))
+z = input("What would you like to purchase? Or exit to purchase items in cart.:")
+
+while z != "exit": 
+    if z == "Cat fud":
+        print("Cat fud, Added to Cart")
+        x.append(item1[0]["name"]) 
+    elif z == "55-inch Ultra HD Smart TV with HDR and built-in streaming apps":
+        print("55-inch Ultra HD Smart TV with HDR and built-in streaming apps, Added to Cart")
+        x.append(item2[0]["name"]) 
+    elif z == "costo hot chicken dog":
+        print("costo hot chicken dog, Added to Cart")
+        x.append(item3[0]["name"]) 
+    elif z == "Empire state building":
+        print("Empire state building, Added to Cart")
+        x.append(item4[0]["name"]) 
+    elif z == "Linkedin":
+        print("Linkedin, Added to Cart")
+        x.append(item5["name"]) 
+    elif z == "exit":
+        print(x)
