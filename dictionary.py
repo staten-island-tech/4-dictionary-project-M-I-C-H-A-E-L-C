@@ -59,5 +59,4 @@ while z != "exit":
     elif z == "Linkedin":
         print("Linkedin, Added to Cart")
         x.append(item5["name"]) 
-    elif z == "exit":
-        print(x)
+    z = input("What would you like to purchase? Or exit to purchase items in cart.:")
