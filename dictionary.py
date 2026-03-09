@@ -1,5 +1,6 @@
 x = []
 y = 0
+item = [item1, item2, item3, item4, item5:]
 item1 = {
     "name": "55-inch Ultra HD Smart TV with HDR and built-in streaming apps",
     "price": 130.99000000000000000000013,
