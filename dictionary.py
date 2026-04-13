@@ -37,35 +37,52 @@ item = [
     "description": "Big moneh"
 }]
 print("Hi, dis me store. Good stuff. Very Chep")
-print(item[0]["name"])
+print(item[0]["name"])  
 print(item[1]["name"])
 print(item[2]["name"])
 print(item[3]["name"])
 print(item[4]["name"])
-z = input("What would you like to purchase? Or exit to purchase items in cart.:")
+
+z = int(input("What would you like to purchase? Or exit to purchase items in cart.:"))
 
 while z != "exit": 
-    if z == "55-inch Ultra HD Smart TV with HDR and built-in streaming apps":
-        print("55-inch Ultra HD Smart TV with HDR and built-in streaming apps, Added to Cart")
-        x.append(item[0]["name"]) 
-        price += item[0]["price"]
-    elif z == "costo hot chicken dog":
-        print("costo hot chicken dog, Added to Cart")
-        x.append(item[1]["name"]) 
-        price += item[1]["price"]
-    elif z == "Cat fud":
-        print("Cat fud, Added to Cart")
-        x.append(item[2]["name"]) 
-        price += item[2]["price"]
-    elif z == "Empire state building":
-        print("Empire state building, Added to Cart")
-        x.append(item[3]["name"]) 
-        price += item[3]["price"]
-    elif z == "Linkedin":
-        print("Linkedin, Added to Cart")
-        x.append(item[4]["name"]) 
-        price += item[4]["price"]
-    z = input("What would you like to purchase? Or exit to purchase items in cart.:")
+    z = int(input("What would you like to purchase? Or exit to purchase items in cart.:"))
+    x.append(item[z]["name"]) 
+    price += (item[z]["price"])
+
+print("Cart:" ,x)
+print("Total:",price)
+
+
+
+
+
+
+
+
+
+
+#     z == "55-inch Ultra HD Smart TV with HDR and built-in streaming apps":
+#        print("55-inch Ultra HD Smart TV with HDR and built-in streaming apps, Added to Cart")
+#        x.append(item[0]["name"]) 
+#        price += item[0]["price"]
+#     z == "costo hot chicken dog":
+#        print("costo hot chicken dog, Added to Cart")
+#        x.append(item[1]["name"]) 
+#        price += item[1]["price"]
+#     z == "Cat fud":
+#        print("Cat fud, Added to Cart")
+#        x.append(item[2]["name"]) 
+#        price += item[2]["price"]
+#     z == "Empire state building":
+#        print("Empire state building, Added to Cart")
+#        x.append(item[3]["name"]) 
+#        price += item[3]["price"]
+#     z == "Linkedin":
+#        print("Linkedin, Added to Cart")
+#        x.append(item[4]["name"]) 
+#        price += item[4]["price"]
+#    z = input("What would you like to purchase? Or exit to purchase items in cart.:")
 
 print("Cart:" ,x)
 print("Total:",price)
