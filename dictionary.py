@@ -1,9 +1,10 @@
 x = []
 price = 0
+
 item = [
 {
     "name": "55-inch Ultra HD Smart TV with HDR and built-in streaming apps",
-    "price": 130.99000000000000000000013,
+    "price": 130.990000000000000000013,
     "department": "Televisions",
     "mass": "1 solar mass, maybe like 55 pounds?",
     "description": "Bundle of 17 eggs"
@@ -42,16 +43,13 @@ print(item[1]["name"])
 print(item[2]["name"])
 print(item[3]["name"])
 print(item[4]["name"])
-
-z = int(input("What would you like to purchase? Or exit to purchase items in cart.:"))
-
-while z != "exit": 
-    z = int(input("What would you like to purchase? Or exit to purchase items in cart.:"))
+z = int(input("What would you like to purchase? Type 0 - 4 depending on the item you are attempting to buy. Or 5 to exit and purchase items in cart.:"))
+while z != 5: 
     x.append(item[z]["name"]) 
     price += (item[z]["price"])
-
+    z = int(input("What would you like to purchase? Type 0 - 4 depending on the item you are attempting to buy. Or 5 to exit and purchase items in cart.:"))
 print("Cart:" ,x)
-print("Total:",price)
+print("Total:", round(price, 2))
 
 
 
@@ -83,6 +81,3 @@ print("Total:",price)
 #        x.append(item[4]["name"]) 
 #        price += item[4]["price"]
 #    z = input("What would you like to purchase? Or exit to purchase items in cart.:")
-
-print("Cart:" ,x)
-print("Total:",price)
